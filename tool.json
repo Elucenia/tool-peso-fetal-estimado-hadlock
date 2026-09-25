@@ -1,0 +1,224 @@
+{
+  "tool": {
+    "id": "peso-fetal-estimado-hadlock",
+    "title": "Peso fetal estimado (Hadlock)",
+    "short": "Peso fetal pela biometria e percentil para a idade",
+    "spec": [
+      "ginecologia-e-obstetricia",
+      "radiologia-e-diagnostico-por-imagem"
+    ],
+    "desc": "Calcule o peso fetal estimado pela fórmula de Hadlock (circunferências cefálica e abdominal e fêmur) e o percentil para a idade gestacional (Hadlock 1991).",
+    "lead": "Estima o peso fetal pela biometria ultrassonográfica e, com a idade gestacional, o percentil na curva de Hadlock, para rastrear fetos pequenos ou grandes.",
+    "fields": [
+      [
+        "cc",
+        "Circunferência cefálica (CC)",
+        "num",
+        {
+          "min": 8,
+          "max": 40,
+          "step": 0.1,
+          "unit": "cm",
+          "ph": "30"
+        }
+      ],
+      [
+        "ca",
+        "Circunferência abdominal (CA)",
+        "num",
+        {
+          "min": 8,
+          "max": 45,
+          "step": 0.1,
+          "unit": "cm",
+          "ph": "30"
+        }
+      ],
+      [
+        "cf",
+        "Comprimento do fêmur (CF)",
+        "num",
+        {
+          "min": 1,
+          "max": 9,
+          "step": 0.01,
+          "unit": "cm",
+          "ph": "6,0"
+        }
+      ],
+      [
+        "ig_sem",
+        "Idade gestacional: semanas <small>(opcional, para o percentil)</small>",
+        "num",
+        {
+          "min": 20,
+          "max": 42,
+          "step": 1,
+          "unit": "semanas",
+          "ph": "34",
+          "opt": true
+        }
+      ],
+      [
+        "ig_dias",
+        "Idade gestacional: dias",
+        "num",
+        {
+          "min": 0,
+          "max": 6,
+          "step": 1,
+          "unit": "dias",
+          "ph": "0",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>Hadlock (1985), com CC, CA e CF em cm:</strong> log<sub>10</sub>(PFE) = 1,326 − 0,00326 × CA × CF + 0,0107 × CC + 0,0438 × CA + 0,158 × CF.</p><p><strong>Percentil (Hadlock 1991):</strong> peso mediano = e<sup>0,578 + 0,332 × IG − 0,00354 × IG²</sup> (IG em semanas), com desvio-padrão de 12,7% do peso mediano; o percentil vem do escore z na distribuição normal.</p>",
+    "table": [
+      [
+        "Percentil do PFE",
+        "Interpretação"
+      ],
+      [
+        "&lt; 3",
+        "Restrição de crescimento fetal (critério isolado do consenso de Delphi)"
+      ],
+      [
+        "3 a 9",
+        "Pequeno para a idade gestacional: investigar restrição (Doppler)"
+      ],
+      [
+        "10 a 90",
+        "Adequado para a idade gestacional"
+      ],
+      [
+        "&gt; 90",
+        "Grande para a idade gestacional"
+      ]
+    ],
+    "tips": [
+      "O erro do peso fetal estimado é de cerca de 7,5% (1 desvio-padrão) no estudo original e aumenta nos extremos de peso: um PFE de 4.000 g pode ser 3.400 ou 4.600 g.",
+      "A circunferência abdominal é a medida que mais pesa: meça-a no plano com a veia umbilical no seio portal e o estômago, com o contorno cutâneo, e não arredonde.",
+      "A curva de Hadlock (1991) veio de uma população predominantemente branca de classe média; muitos serviços usam curvas como Intergrowth-21st ou OMS: informe no laudo qual foi usada.",
+      "Um único PFE abaixo do p10 não define restrição: considere o Doppler (artéria umbilical, cerebral média), o líquido amniótico e a velocidade de crescimento em exames seriados."
+    ],
+    "sources": [
+      [
+        "Hadlock FP et al. Estimation of fetal weight with the use of head, body, and femur measurements: a prospective study. Am J Obstet Gynecol, 1985.",
+        "https://doi.org/10.1016/0002-9378(85)90298-4"
+      ],
+      [
+        "Hadlock FP, Harrist RB, Martinez-Poyer J. In utero analysis of fetal growth: a sonographic weight standard. Radiology, 1991.",
+        "https://doi.org/10.1148/radiology.181.1.1887021"
+      ],
+      [
+        "Gordijn SJ et al. Consensus definition of fetal growth restriction: a Delphi procedure. Ultrasound Obstet Gynecol, 2016.",
+        "https://doi.org/10.1002/uog.15884"
+      ]
+    ],
+    "cases": [
+      [
+        "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        {
+          "cc": 30,
+          "ca": 30,
+          "cf": 6
+        },
+        {
+          "raw": {
+            "pfe": 2099.9
+          },
+          "tol": 1,
+          "level": "info"
+        }
+      ],
+      [
+        "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        {
+          "cc": 30,
+          "ca": 30,
+          "cf": 6,
+          "ig_sem": 34,
+          "ig_dias": 0
+        },
+        {
+          "raw": {
+            "mediana": 2377.4,
+            "percentil": 17.9
+          },
+          "tol": 1,
+          "level": "low"
+        }
+      ],
+      [
+        "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        {
+          "cc": 34,
+          "ca": 36,
+          "cf": 7.4,
+          "ig_sem": 40,
+          "ig_dias": 0
+        },
+        {
+          "raw": {
+            "pfe": 3692.6,
+            "mediana": 3619.2,
+            "percentil": 56.3
+          },
+          "tol": 1,
+          "level": "low"
+        }
+      ],
+      [
+        "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        {
+          "cc": 28,
+          "ca": 24,
+          "cf": 5.5,
+          "ig_sem": 34,
+          "ig_dias": 0
+        },
+        {
+          "raw": {
+            "pfe": 1304.6
+          },
+          "tol": 1,
+          "level": "mid",
+          "verdict": "percentil 10"
+        }
+      ]
+    ],
+    "batch": "mulher-crianca",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "mulher-crianca",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/mulher-crianca.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/mulher-crianca.php",
+    "sha256": "c37d3fefb430d6ec19144161e40e9a08247f3a10406e2873c8d6a4be8649917c",
+    "bytes": 81915
+  },
+  "clinicalValidation": "not-performed"
+}

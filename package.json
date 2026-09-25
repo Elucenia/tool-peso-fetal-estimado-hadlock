@@ -1,0 +1,19 @@
+{
+  "name": "@elucenia/tool-peso-fetal-estimado-hadlock",
+  "version": "0.1.0",
+  "description": "Peso fetal estimado (Hadlock)",
+  "main": "calculator.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-peso-fetal-estimado-hadlock.git"
+  }
+}

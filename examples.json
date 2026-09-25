@@ -1,0 +1,102 @@
+[
+  {
+    "label": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+    "input": {
+      "cc": 30,
+      "ca": 30,
+      "cf": 6
+    },
+    "expected": {
+      "raw": {
+        "pfe": 2099.9
+      },
+      "tol": 1,
+      "level": "info"
+    },
+    "originalInput": {
+      "cc": 30,
+      "ca": 30,
+      "cf": 6
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+    "input": {
+      "cc": 30,
+      "ca": 30,
+      "cf": 6,
+      "ig_sem": 34,
+      "ig_dias": 0
+    },
+    "expected": {
+      "raw": {
+        "mediana": 2377.4,
+        "percentil": 17.9
+      },
+      "tol": 1,
+      "level": "low"
+    },
+    "originalInput": {
+      "cc": 30,
+      "ca": 30,
+      "cf": 6,
+      "ig_sem": 34,
+      "ig_dias": 0
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+    "input": {
+      "cc": 34,
+      "ca": 36,
+      "cf": 7.4,
+      "ig_sem": 40,
+      "ig_dias": 0
+    },
+    "expected": {
+      "raw": {
+        "pfe": 3692.6,
+        "mediana": 3619.2,
+        "percentil": 56.3
+      },
+      "tol": 1,
+      "level": "low"
+    },
+    "originalInput": {
+      "cc": 34,
+      "ca": 36,
+      "cf": 7.4,
+      "ig_sem": 40,
+      "ig_dias": 0
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+    "input": {
+      "cc": 28,
+      "ca": 24,
+      "cf": 5.5,
+      "ig_sem": 34,
+      "ig_dias": 0
+    },
+    "expected": {
+      "raw": {
+        "pfe": 1304.6
+      },
+      "tol": 1,
+      "level": "mid",
+      "verdict": "percentil 10"
+    },
+    "originalInput": {
+      "cc": 28,
+      "ca": 24,
+      "cf": 5.5,
+      "ig_sem": 34,
+      "ig_dias": 0
+    },
+    "expandedZeroOptions": []
+  }
+]
