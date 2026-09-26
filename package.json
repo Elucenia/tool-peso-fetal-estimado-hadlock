@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-peso-fetal-estimado-hadlock",
   "version": "0.1.0",
-  "description": "Peso fetal estimado (Hadlock) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Peso fetal estimado (Hadlock) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
