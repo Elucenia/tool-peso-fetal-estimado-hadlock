@@ -1,0 +1,934 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "peso-fetal-estimado-hadlock",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+    "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+    "bytes": 5966
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "peso-fetal-estimado-hadlock",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+      "originalInput": {
+        "cc": 30,
+        "ca": 30,
+        "cf": 6
+      },
+      "input": {
+        "cc": 30,
+        "ca": 30,
+        "cf": 6
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pfe": 2099.9
+        },
+        "tol": 1,
+        "level": "info"
+      },
+      "recordedResult": {
+        "main": [
+          "2.100",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 2099.9067037624263
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cc": 30,
+            "ca": 30,
+            "cf": 6
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+          "startedAt": "2026-10-05T17:39:23.762Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "peso-fetal-estimado-hadlock",
+              "main": [
+                "2.100",
+                "g"
+              ],
+              "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+              "raw": {
+                "pfe": 2099.9067037624263
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e1825ba34c5651700913eafb99745af015451dc62a8b3f16892db7833d5c10ba",
+          "bytes": 196,
+          "elapsedMs": 4.123899999976857
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+        "startedAt": "2026-10-05T17:39:23.762Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "peso-fetal-estimado-hadlock",
+            "main": [
+              "2.100",
+              "g"
+            ],
+            "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+            "raw": {
+              "pfe": 2099.9067037624263
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e1825ba34c5651700913eafb99745af015451dc62a8b3f16892db7833d5c10ba",
+        "bytes": 196,
+        "elapsedMs": 4.123899999976857
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pfe",
+            "expected": 2099.9,
+            "obtained": 2099.9067037624263,
+            "tolerance": 1,
+            "difference": 0.0067037624262411555,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pfe",
+            "expected": 2099.9067037624263,
+            "obtained": 2099.9067037624263,
+            "tolerance": 2.0999067037624263e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2.100",
+            "obtained": "2.100",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "g",
+            "obtained": "g",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "peso-fetal-estimado-hadlock",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+      "originalInput": {
+        "cc": 30,
+        "ca": 30,
+        "cf": 6,
+        "ig_sem": 34,
+        "ig_dias": 0
+      },
+      "input": {
+        "cc": 30,
+        "ca": 30,
+        "cf": 6,
+        "ig_sem": 34,
+        "ig_dias": 0
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "mediana": 2377.4,
+          "percentil": 17.9
+        },
+        "tol": 1,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "2.100",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 2099.9067037624263,
+          "mediana": 2377.3935036527682,
+          "percentil": 17.903557550519476
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cc": 30,
+            "ca": 30,
+            "cf": 6,
+            "ig_sem": 34,
+            "ig_dias": 0
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+          "startedAt": "2026-10-05T17:39:24.074Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "peso-fetal-estimado-hadlock",
+              "main": [
+                "2.100",
+                "g"
+              ],
+              "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+              "raw": {
+                "pfe": 2099.9067037624263,
+                "mediana": 2377.3935036527682,
+                "percentil": 17.903557550519476
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "067e14e36936b08ba7047b2c3ed1e47c28d9d453465d9546cf3227c359278174",
+          "bytes": 256,
+          "elapsedMs": 3.7951999999932013
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+        "startedAt": "2026-10-05T17:39:24.074Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "peso-fetal-estimado-hadlock",
+            "main": [
+              "2.100",
+              "g"
+            ],
+            "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+            "raw": {
+              "pfe": 2099.9067037624263,
+              "mediana": 2377.3935036527682,
+              "percentil": 17.903557550519476
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "067e14e36936b08ba7047b2c3ed1e47c28d9d453465d9546cf3227c359278174",
+        "bytes": 256,
+        "elapsedMs": 3.7951999999932013
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.mediana",
+            "expected": 2377.4,
+            "obtained": 2377.3935036527682,
+            "tolerance": 1,
+            "difference": 0.006496347231859545,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.percentil",
+            "expected": 17.9,
+            "obtained": 17.903557550519476,
+            "tolerance": 1,
+            "difference": 0.0035575505194778145,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pfe",
+            "expected": 2099.9067037624263,
+            "obtained": 2099.9067037624263,
+            "tolerance": 2.0999067037624263e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mediana",
+            "expected": 2377.3935036527682,
+            "obtained": 2377.3935036527682,
+            "tolerance": 2.377393503652768e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.percentil",
+            "expected": 17.903557550519476,
+            "obtained": 17.903557550519476,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2.100",
+            "obtained": "2.100",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "g",
+            "obtained": "g",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "peso-fetal-estimado-hadlock",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+      "originalInput": {
+        "cc": 34,
+        "ca": 36,
+        "cf": 7.4,
+        "ig_sem": 40,
+        "ig_dias": 0
+      },
+      "input": {
+        "cc": 34,
+        "ca": 36,
+        "cf": 7.4,
+        "ig_sem": 40,
+        "ig_dias": 0
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pfe": 3692.6,
+          "mediana": 3619.2,
+          "percentil": 56.3
+        },
+        "tol": 1,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "3.693",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 3692.6317540570685,
+          "mediana": 3619.1700117160603,
+          "percentil": 56.3491095168013
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cc": 34,
+            "ca": 36,
+            "cf": 7.4,
+            "ig_sem": 40,
+            "ig_dias": 0
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+          "startedAt": "2026-10-05T17:39:24.387Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "peso-fetal-estimado-hadlock",
+              "main": [
+                "3.693",
+                "g"
+              ],
+              "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+              "raw": {
+                "pfe": 3692.6317540570685,
+                "mediana": 3619.1700117160603,
+                "percentil": 56.3491095168013
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "00aeb949d5c0549a299f53d5899a31c0af797c1ddf4c349c8aa061d4d541c8c2",
+          "bytes": 254,
+          "elapsedMs": 3.7010000000009313
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+        "startedAt": "2026-10-05T17:39:24.387Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "peso-fetal-estimado-hadlock",
+            "main": [
+              "3.693",
+              "g"
+            ],
+            "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+            "raw": {
+              "pfe": 3692.6317540570685,
+              "mediana": 3619.1700117160603,
+              "percentil": 56.3491095168013
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "00aeb949d5c0549a299f53d5899a31c0af797c1ddf4c349c8aa061d4d541c8c2",
+        "bytes": 254,
+        "elapsedMs": 3.7010000000009313
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pfe",
+            "expected": 3692.6,
+            "obtained": 3692.6317540570685,
+            "tolerance": 1,
+            "difference": 0.031754057068610564,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.mediana",
+            "expected": 3619.2,
+            "obtained": 3619.1700117160603,
+            "tolerance": 1,
+            "difference": 0.02998828393947406,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.percentil",
+            "expected": 56.3,
+            "obtained": 56.3491095168013,
+            "tolerance": 1,
+            "difference": 0.04910951680130182,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pfe",
+            "expected": 3692.6317540570685,
+            "obtained": 3692.6317540570685,
+            "tolerance": 3.6926317540570687e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mediana",
+            "expected": 3619.1700117160603,
+            "obtained": 3619.1700117160603,
+            "tolerance": 3.61917001171606e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.percentil",
+            "expected": 56.3491095168013,
+            "obtained": 56.3491095168013,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3.693",
+            "obtained": "3.693",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "g",
+            "obtained": "g",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "peso-fetal-estimado-hadlock",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+      "originalInput": {
+        "cc": 28,
+        "ca": 24,
+        "cf": 5.5,
+        "ig_sem": 34,
+        "ig_dias": 0
+      },
+      "input": {
+        "cc": 28,
+        "ca": 24,
+        "cf": 5.5,
+        "ig_sem": 34,
+        "ig_dias": 0
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pfe": 1304.6
+        },
+        "tol": 1,
+        "level": "mid",
+        "verdict": "percentil 10"
+      },
+      "recordedResult": {
+        "main": [
+          "1.305",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 1304.6078878429987,
+          "mediana": 2377.3935036527682,
+          "percentil": 0.01903960571638663
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cc": 28,
+            "ca": 24,
+            "cf": 5.5,
+            "ig_sem": 34,
+            "ig_dias": 0
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+          "startedAt": "2026-10-05T17:39:24.701Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "peso-fetal-estimado-hadlock",
+              "main": [
+                "1.305",
+                "g"
+              ],
+              "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+              "raw": {
+                "pfe": 1304.6078878429987,
+                "mediana": 2377.3935036527682,
+                "percentil": 0.01903960571638663
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1605bcbbaee7aac0b147e26954c9e654fafba9ecde34ed8db1d59ba1adddf867",
+          "bytes": 257,
+          "elapsedMs": 2.8452999999863096
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/peso-fetal-estimado-hadlock/calculate",
+        "startedAt": "2026-10-05T17:39:24.701Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "peso-fetal-estimado-hadlock",
+            "main": [
+              "1.305",
+              "g"
+            ],
+            "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+            "raw": {
+              "pfe": 1304.6078878429987,
+              "mediana": 2377.3935036527682,
+              "percentil": 0.01903960571638663
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1605bcbbaee7aac0b147e26954c9e654fafba9ecde34ed8db1d59ba1adddf867",
+        "bytes": 257,
+        "elapsedMs": 2.8452999999863096
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pfe",
+            "expected": 1304.6,
+            "obtained": 1304.6078878429987,
+            "tolerance": 1,
+            "difference": 0.007887842998798078,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pfe",
+            "expected": 1304.6078878429987,
+            "obtained": 1304.6078878429987,
+            "tolerance": 1.3046078878429988e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mediana",
+            "expected": 2377.3935036527682,
+            "obtained": 2377.3935036527682,
+            "tolerance": 2.377393503652768e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.percentil",
+            "expected": 0.01903960571638663,
+            "obtained": 0.01903960571638663,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1.305",
+            "obtained": "1.305",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "g",
+            "obtained": "g",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
