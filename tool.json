@@ -3,12 +3,13 @@
     "id": "peso-fetal-estimado-hadlock",
     "title": "Peso fetal estimado (Hadlock)",
     "short": "Peso fetal pela biometria e percentil para a idade",
+    "desc": "Calcule o peso fetal estimado pela fórmula de Hadlock (circunferências cefálica e abdominal e fêmur) e o percentil para a idade gestacional (Hadlock 1991).",
+    "lead": "Estima o peso fetal pela biometria ultrassonográfica e, com a idade gestacional, o percentil na curva de Hadlock, para rastrear fetos pequenos ou grandes.",
+    "kind": "Calculadora",
     "spec": [
       "ginecologia-e-obstetricia",
       "radiologia-e-diagnostico-por-imagem"
     ],
-    "desc": "Calcule o peso fetal estimado pela fórmula de Hadlock (circunferências cefálica e abdominal e fêmur) e o percentil para a idade gestacional (Hadlock 1991).",
-    "lead": "Estima o peso fetal pela biometria ultrassonográfica e, com a idade gestacional, o percentil na curva de Hadlock, para rastrear fetos pequenos ou grandes.",
     "fields": [
       [
         "cc",
@@ -74,34 +75,6 @@
       ]
     ],
     "formula": "<p><strong>Hadlock (1985), com CC, CA e CF em cm:</strong> log<sub>10</sub>(PFE) = 1,326 − 0,00326 × CA × CF + 0,0107 × CC + 0,0438 × CA + 0,158 × CF.</p><p><strong>Percentil (Hadlock 1991):</strong> peso mediano = e<sup>0,578 + 0,332 × IG − 0,00354 × IG²</sup> (IG em semanas), com desvio-padrão de 12,7% do peso mediano; o percentil vem do escore z na distribuição normal.</p>",
-    "table": [
-      [
-        "Percentil do PFE",
-        "Interpretação"
-      ],
-      [
-        "&lt; 3",
-        "Restrição de crescimento fetal (critério isolado do consenso de Delphi)"
-      ],
-      [
-        "3 a 9",
-        "Pequeno para a idade gestacional: investigar restrição (Doppler)"
-      ],
-      [
-        "10 a 90",
-        "Adequado para a idade gestacional"
-      ],
-      [
-        "&gt; 90",
-        "Grande para a idade gestacional"
-      ]
-    ],
-    "tips": [
-      "O erro do peso fetal estimado é de cerca de 7,5% (1 desvio-padrão) no estudo original e aumenta nos extremos de peso: um PFE de 4.000 g pode ser 3.400 ou 4.600 g.",
-      "A circunferência abdominal é a medida que mais pesa: meça-a no plano com a veia umbilical no seio portal e o estômago, com o contorno cutâneo, e não arredonde.",
-      "A curva de Hadlock (1991) veio de uma população predominantemente branca de classe média; muitos serviços usam curvas como Intergrowth-21st ou OMS: informe no laudo qual foi usada.",
-      "Um único PFE abaixo do p10 não define restrição: considere o Doppler (artéria umbilical, cerebral média), o líquido amniótico e a velocidade de crescimento em exames seriados."
-    ],
     "sources": [
       [
         "Hadlock FP et al. Estimation of fetal weight with the use of head, body, and femur measurements: a prospective study. Am J Obstet Gynecol, 1985.",
@@ -188,9 +161,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -199,17 +169,419 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:50:52.660Z",
+      "total": 27,
+      "passed": 27,
+      "sourceRowCount": 27,
+      "uniqueApiInputCount": 27,
+      "sourceContextCount": 27,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "b7ba844a3d8f4900917b99ae6334fc305d60f5becb56132504e4ac26f5768822",
+        "total": 27,
+        "bankRowCount": 27,
+        "uniqueApiInputCount": 27,
+        "sourceContextCount": 27,
+        "fullStoredSourceRows": 27,
+        "localRejectionContractCount": 0,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/seven-primary-independent-expectations-final35.json",
+            "sha256": "7fc110068db25fd0f4a5d2f53569d24fa93b6fa05ac3486d752814c33204e41e"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/seven-primary-independent-source-check-final35.json",
+          "sha256": "dca93fed75cf2559c3ef39c581218fd9c4e604d0bbbcd787556bc8ef14590e85"
+        },
+        "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+      },
+      "scope": "27 HC/AC/FL weight equation witnesses only; official reproduced coefficients with indexed primary cross-check. 1991 percentile, normal-CDF, median semantics and clinical growth interpretations excluded.",
+      "sourceEvidence": {
+        "review": {
+          "file": "reports/review-20261003/seven-primary-source-review-final35.json",
+          "sha256": "030c9299a4eef7b89ff75601532949784448b173e52da8b014b56597b14eef48"
+        },
+        "reading": {
+          "id": "peso-fetal-estimado-hadlock",
+          "currentMethodVersion": "Hadlock 1985 HC/AC/FL variante 3 medidas; curva Hadlock 1991 lognormalmediana, DP 12,7% aproximaçãolocal",
+          "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3881966/",
+          "recordBinding": {
+            "file": "reports/review-20261003/seven-primary-frozen-inputs-final35/selected-records/peso-fetal-estimado-hadlock.json",
+            "sha256": "a41a2683c6574dd595abd3b4ca762fdc92d11bbdff3213c038f1c0a423ca2255"
+          },
+          "adapterBindings": [
+            {
+              "file": "apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+              "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+              "bytes": 5966,
+              "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+              "currentSha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+              "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+              "bytes": 5966,
+              "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/dashboard/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+              "currentSha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+              "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+              "bytes": 5966,
+              "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/command-center/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+              "currentSha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+            }
+          ],
+          "ownSourceInputs": 27,
+          "observedAdapterRows": 81,
+          "sourceIds": [
+            "Hadlock1985-ISUOG-reproduction",
+            "Hadlock-reproduction2025-indexed",
+            "Hadlock1991-abstract-only"
+          ],
+          "scope": "27 HC/AC/FL weight equation witnesses only; official reproduced coefficients with indexed primary cross-check. 1991 percentile, normal-CDF, median semantics and clinical growth interpretations excluded.",
+          "status": "bounded-reproduced-equation-confirmed; original-tables-inaccessible",
+          "unchecked": [
+            "Original 1985 coefficient table",
+            "1991 full equation/percentile model",
+            "Measurement and fetal-growth/clinical decisions"
+          ],
+          "clinicalApproval": "not-performed",
+          "professionalTranslationApproval": "not-performed",
+          "rightsApproval": "not-performed",
+          "fullMethodApproval": "not-performed"
+        },
+        "primarySources": []
+      },
+      "evidencePath": "reports/review-20261003/seven-primary-independent-source-check-final35.json",
+      "evidenceSha256": "dca93fed75cf2559c3ef39c581218fd9c4e604d0bbbcd787556bc8ef14590e85",
+      "independentPeer": {
+        "status": "pending-independent-package-peer",
+        "scope": "Western own primary derivation before imports and actual Node/VM/Chromium selected-math evidence; no new independent source rederivation claimed by this packaging preparation."
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+          "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+          "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+          "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+        }
+      ],
+      "qualifications": [
+        "Original 1985 coefficient table",
+        "1991 full equation/percentile model",
+        "Measurement and fetal-growth/clinical decisions",
+        "Source references/edition conflicts and raw parity/display observations preserved; no unscoped outputs or diagnosis/legal/forensic/follow-up decisions approved."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Hadlock 1985 HC/AC/FL variante 3 medidas; curva Hadlock 1991 lognormalmediana, DP 12,7% aproximaçãolocal",
+    "implementationVersion": "peso-fetal-estimado-hadlock@native-2026-10-03+db0279cca49e",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3881966/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Hadlock (1985), com CC, CA e CF em cm: log 10 (PFE) = 1,326 − 0,00326 × CA × CF + 0,0107 × CC + 0,0438 × CA + 0,158 × CF. Percentil (Hadlock 1991): peso mediano = e 0,578 + 0,332 × IG − 0,00354 × IG² (IG em semanas), com desvio-padrão de 12,7% do peso mediano; o percentil vem do escore z na distribuição normal.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "cc",
+            "label": "Circunferência cefálica (CC)",
+            "type": "num",
+            "min": 8,
+            "max": 40,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ca",
+            "label": "Circunferência abdominal (CA)",
+            "type": "num",
+            "min": 8,
+            "max": 45,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cf",
+            "label": "Comprimento do fêmur (CF)",
+            "type": "num",
+            "min": 1,
+            "max": 9,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ig_sem",
+            "label": "Idade gestacional: semanas <small>(opcional, para o percentil)</small>",
+            "type": "num",
+            "min": 20,
+            "max": 42,
+            "unit": "semanas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "ig_dias",
+            "label": "Idade gestacional: dias",
+            "type": "num",
+            "min": 0,
+            "max": 6,
+            "unit": "dias",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "63b9863d123592f487aa70dc355abf357d02228591bebc5e05d0fef5df7674da"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Hadlock FP et al. Estimation of fetal weight with the use of head, body, and femur measurements: a prospective study. Am J Obstet Gynecol, 1985.",
+          "url": "https://doi.org/10.1016/0002-9378(85)90298-4",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Estimation of fetal weight with the use of head, body, and femur measurements--a prospective study.",
+            "year": "1985",
+            "firstPublicationDate": "1985-02-01",
+            "doi": "10.1016/0002-9378(85)90298-4",
+            "pmid": "3881966",
+            "journal": "American journal of obstetrics and gynecology",
+            "authors": "Hadlock FP, Harrist RB, Sharman RS, Deter RL, Park SK."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3881966/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "a8a156f7e621fdcf980036421eda2be382cffaf5f682fdcf83e6b6e86841c969",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Hadlock FP, Harrist RB, Martinez-Poyer J. In utero analysis of fetal growth: a sonographic weight standard. Radiology, 1991.",
+          "url": "https://doi.org/10.1148/radiology.181.1.1887021",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "In utero analysis of fetal growth: a sonographic weight standard.",
+            "year": "1991",
+            "firstPublicationDate": "1991-10-01",
+            "doi": "10.1148/radiology.181.1.1887021",
+            "pmid": "1887021",
+            "journal": "Radiology",
+            "authors": "Hadlock FP, Harrist RB, Martinez-Poyer J."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/1887021/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "12577b7d21638107596a9d525753e8b6996e1de78f7cc914b93dd532f19767ea",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Gordijn SJ et al. Consensus definition of fetal growth restriction: a Delphi procedure. Ultrasound Obstet Gynecol, 2016.",
+          "url": "https://doi.org/10.1002/uog.15884",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Consensus definition of fetal growth restriction: a Delphi procedure.",
+            "year": "2016",
+            "firstPublicationDate": "2016-09-01",
+            "doi": "10.1002/uog.15884",
+            "pmid": "26909664",
+            "journal": "Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology",
+            "authors": "Gordijn SJ, Beune IM, Thilaganathan B, Papageorghiou A, Baschat AA, Baker PN, Silver RM, Wynia K, Ganzevoort W."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/26909664/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "32b712263eab1ff12341680342e478f93c058af080d32de897dbc046021be0ee",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:50:52.660Z",
+        "total": 27,
+        "passed": 27,
+        "sourceRowCount": 27,
+        "uniqueApiInputCount": 27,
+        "sourceContextCount": 27,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "b7ba844a3d8f4900917b99ae6334fc305d60f5becb56132504e4ac26f5768822",
+          "total": 27,
+          "bankRowCount": 27,
+          "uniqueApiInputCount": 27,
+          "sourceContextCount": 27,
+          "fullStoredSourceRows": 27,
+          "localRejectionContractCount": 0,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/seven-primary-independent-expectations-final35.json",
+              "sha256": "7fc110068db25fd0f4a5d2f53569d24fa93b6fa05ac3486d752814c33204e41e"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/seven-primary-independent-source-check-final35.json",
+            "sha256": "dca93fed75cf2559c3ef39c581218fd9c4e604d0bbbcd787556bc8ef14590e85"
+          },
+          "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+        },
+        "scope": "27 HC/AC/FL weight equation witnesses only; official reproduced coefficients with indexed primary cross-check. 1991 percentile, normal-CDF, median semantics and clinical growth interpretations excluded.",
+        "sourceEvidence": {
+          "review": {
+            "file": "reports/review-20261003/seven-primary-source-review-final35.json",
+            "sha256": "030c9299a4eef7b89ff75601532949784448b173e52da8b014b56597b14eef48"
+          },
+          "reading": {
+            "id": "peso-fetal-estimado-hadlock",
+            "currentMethodVersion": "Hadlock 1985 HC/AC/FL variante 3 medidas; curva Hadlock 1991 lognormalmediana, DP 12,7% aproximaçãolocal",
+            "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3881966/",
+            "recordBinding": {
+              "file": "reports/review-20261003/seven-primary-frozen-inputs-final35/selected-records/peso-fetal-estimado-hadlock.json",
+              "sha256": "a41a2683c6574dd595abd3b4ca762fdc92d11bbdff3213c038f1c0a423ca2255"
+            },
+            "adapterBindings": [
+              {
+                "file": "apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+                "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+                "bytes": 5966,
+                "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+                "currentSha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+                "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+                "bytes": 5966,
+                "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/dashboard/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+                "currentSha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+                "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+                "bytes": 5966,
+                "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/command-center/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+                "currentSha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+              }
+            ],
+            "ownSourceInputs": 27,
+            "observedAdapterRows": 81,
+            "sourceIds": [
+              "Hadlock1985-ISUOG-reproduction",
+              "Hadlock-reproduction2025-indexed",
+              "Hadlock1991-abstract-only"
+            ],
+            "scope": "27 HC/AC/FL weight equation witnesses only; official reproduced coefficients with indexed primary cross-check. 1991 percentile, normal-CDF, median semantics and clinical growth interpretations excluded.",
+            "status": "bounded-reproduced-equation-confirmed; original-tables-inaccessible",
+            "unchecked": [
+              "Original 1985 coefficient table",
+              "1991 full equation/percentile model",
+              "Measurement and fetal-growth/clinical decisions"
+            ],
+            "clinicalApproval": "not-performed",
+            "professionalTranslationApproval": "not-performed",
+            "rightsApproval": "not-performed",
+            "fullMethodApproval": "not-performed"
+          },
+          "primarySources": []
+        },
+        "evidencePath": "reports/review-20261003/seven-primary-independent-source-check-final35.json",
+        "evidenceSha256": "dca93fed75cf2559c3ef39c581218fd9c4e604d0bbbcd787556bc8ef14590e85",
+        "independentPeer": {
+          "status": "pending-independent-package-peer",
+          "scope": "Western own primary derivation before imports and actual Node/VM/Chromium selected-math evidence; no new independent source rederivation claimed by this packaging preparation."
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+            "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+            "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+            "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+          }
+        ],
+        "qualifications": [
+          "Original 1985 coefficient table",
+          "1991 full equation/percentile model",
+          "Measurement and fetal-growth/clinical decisions",
+          "Source references/edition conflicts and raw parity/display observations preserved; no unscoped outputs or diagnosis/legal/forensic/follow-up decisions approved."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+    },
+    "limits": "A referência Hadlock 1985 avaliou modelos de peso fetal em 109 fetos, usando dimensões de cabeça, abdome e fêmur. Peso estimado não é uma medida direta e tem erro de predição; o 1DP de 7,5% relatado nesse estudo não deve ser confundido com parâmetros da curva de crescimento de 1991. Percentis e aproximações locais dependem de uma fonte/variante adicional, ainda não conferida integralmente nessa leitura.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.103Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Coeficientes da varianteHC/AC/FL, faixas de biometria, curva/percentis 1991 e aproximação lognormal local não foram conferidos no resumo 1985."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+    "bytes": 5966,
+    "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "de59bd6ab47c0386512769ea2f0ff2cf25d97ea5aa0e39b389f5dc34dc577342",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "c674620d4ed140aa466e94c509ed9315cf7f0b39429a1bf7bccc4334c9f0b247",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "c674620d4ed140aa466e94c509ed9315cf7f0b39429a1bf7bccc4334c9f0b247",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,0 +1,439 @@
+{
+  "id": "peso-fetal-estimado-hadlock",
+  "at": "2026-10-05T17:30:01.152Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
+    "bytes": 5966,
+    "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+  },
+  "cases": [
+    {
+      "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+      "input": {
+        "cc": 30,
+        "ca": 30,
+        "cf": 6
+      },
+      "obtained": {
+        "id": "peso-fetal-estimado-hadlock",
+        "main": [
+          "2.100",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 2099.9067037624263
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.pfe",
+          "expected": 2099.9,
+          "obtained": 2099.9067037624263,
+          "tolerance": 1,
+          "difference": 0.0067037624262411555,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pfe",
+          "expected": 2099.9067037624263,
+          "obtained": 2099.9067037624263,
+          "tolerance": 2.0999067037624263e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2.100",
+          "obtained": "2.100",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "g",
+          "obtained": "g",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+      "input": {
+        "cc": 30,
+        "ca": 30,
+        "cf": 6,
+        "ig_sem": 34,
+        "ig_dias": 0
+      },
+      "obtained": {
+        "id": "peso-fetal-estimado-hadlock",
+        "main": [
+          "2.100",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 2099.9067037624263,
+          "mediana": 2377.3935036527682,
+          "percentil": 17.903557550519476
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.mediana",
+          "expected": 2377.4,
+          "obtained": 2377.3935036527682,
+          "tolerance": 1,
+          "difference": 0.006496347231859545,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.percentil",
+          "expected": 17.9,
+          "obtained": 17.903557550519476,
+          "tolerance": 1,
+          "difference": 0.0035575505194778145,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pfe",
+          "expected": 2099.9067037624263,
+          "obtained": 2099.9067037624263,
+          "tolerance": 2.0999067037624263e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mediana",
+          "expected": 2377.3935036527682,
+          "obtained": 2377.3935036527682,
+          "tolerance": 2.377393503652768e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.percentil",
+          "expected": 17.903557550519476,
+          "obtained": 17.903557550519476,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2.100",
+          "obtained": "2.100",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "g",
+          "obtained": "g",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+      "input": {
+        "cc": 34,
+        "ca": 36,
+        "cf": 7.4,
+        "ig_sem": 40,
+        "ig_dias": 0
+      },
+      "obtained": {
+        "id": "peso-fetal-estimado-hadlock",
+        "main": [
+          "3.693",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 3692.6317540570685,
+          "mediana": 3619.1700117160603,
+          "percentil": 56.3491095168013
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.pfe",
+          "expected": 3692.6,
+          "obtained": 3692.6317540570685,
+          "tolerance": 1,
+          "difference": 0.031754057068610564,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.mediana",
+          "expected": 3619.2,
+          "obtained": 3619.1700117160603,
+          "tolerance": 1,
+          "difference": 0.02998828393947406,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.percentil",
+          "expected": 56.3,
+          "obtained": 56.3491095168013,
+          "tolerance": 1,
+          "difference": 0.04910951680130182,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pfe",
+          "expected": 3692.6317540570685,
+          "obtained": 3692.6317540570685,
+          "tolerance": 3.6926317540570687e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mediana",
+          "expected": 3619.1700117160603,
+          "obtained": 3619.1700117160603,
+          "tolerance": 3.61917001171606e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.percentil",
+          "expected": 56.3491095168013,
+          "obtained": 56.3491095168013,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "3.693",
+          "obtained": "3.693",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "g",
+          "obtained": "g",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+      "input": {
+        "cc": 28,
+        "ca": 24,
+        "cf": 5.5,
+        "ig_sem": 34,
+        "ig_dias": 0
+      },
+      "obtained": {
+        "id": "peso-fetal-estimado-hadlock",
+        "main": [
+          "1.305",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 1304.6078878429987,
+          "mediana": 2377.3935036527682,
+          "percentil": 0.01903960571638663
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.pfe",
+          "expected": 1304.6,
+          "obtained": 1304.6078878429987,
+          "tolerance": 1,
+          "difference": 0.007887842998798078,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pfe",
+          "expected": 1304.6078878429987,
+          "obtained": 1304.6078878429987,
+          "tolerance": 1.3046078878429988e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mediana",
+          "expected": 2377.3935036527682,
+          "obtained": 2377.3935036527682,
+          "tolerance": 2.377393503652768e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.percentil",
+          "expected": 0.01903960571638663,
+          "obtained": 0.01903960571638663,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1.305",
+          "obtained": "1.305",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "g",
+          "obtained": "g",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 50,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

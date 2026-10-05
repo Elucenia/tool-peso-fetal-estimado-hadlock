@@ -1,6 +1,14 @@
 [
   {
-    "label": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+    "id": "peso-fetal-estimado-hadlock",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+    "originalInput": {
+      "cc": 30,
+      "ca": 30,
+      "cf": 6
+    },
     "input": {
       "cc": 30,
       "ca": 30,
@@ -13,15 +21,37 @@
       "tol": 1,
       "level": "info"
     },
+    "recordedResult": {
+      "main": [
+        "2.100",
+        "g"
+      ],
+      "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+      "raw": {
+        "pfe": 2099.9067037624263
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "peso-fetal-estimado-hadlock",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
     "originalInput": {
       "cc": 30,
       "ca": 30,
-      "cf": 6
+      "cf": 6,
+      "ig_sem": 34,
+      "ig_dias": 0
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
     "input": {
       "cc": 30,
       "ca": 30,
@@ -37,17 +67,39 @@
       "tol": 1,
       "level": "low"
     },
-    "originalInput": {
-      "cc": 30,
-      "ca": 30,
-      "cf": 6,
-      "ig_sem": 34,
-      "ig_dias": 0
+    "recordedResult": {
+      "main": [
+        "2.100",
+        "g"
+      ],
+      "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+      "raw": {
+        "pfe": 2099.9067037624263,
+        "mediana": 2377.3935036527682,
+        "percentil": 17.903557550519476
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+    "id": "peso-fetal-estimado-hadlock",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+    "originalInput": {
+      "cc": 34,
+      "ca": 36,
+      "cf": 7.4,
+      "ig_sem": 40,
+      "ig_dias": 0
+    },
     "input": {
       "cc": 34,
       "ca": 36,
@@ -64,17 +116,39 @@
       "tol": 1,
       "level": "low"
     },
-    "originalInput": {
-      "cc": 34,
-      "ca": 36,
-      "cf": 7.4,
-      "ig_sem": 40,
-      "ig_dias": 0
+    "recordedResult": {
+      "main": [
+        "3.693",
+        "g"
+      ],
+      "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+      "raw": {
+        "pfe": 3692.6317540570685,
+        "mediana": 3619.1700117160603,
+        "percentil": 56.3491095168013
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+    "id": "peso-fetal-estimado-hadlock",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+    "originalInput": {
+      "cc": 28,
+      "ca": 24,
+      "cf": 5.5,
+      "ig_sem": 34,
+      "ig_dias": 0
+    },
     "input": {
       "cc": 28,
       "ca": 24,
@@ -90,13 +164,25 @@
       "level": "mid",
       "verdict": "percentil 10"
     },
-    "originalInput": {
-      "cc": 28,
-      "ca": 24,
-      "cf": 5.5,
-      "ig_sem": 34,
-      "ig_dias": 0
+    "recordedResult": {
+      "main": [
+        "1.305",
+        "g"
+      ],
+      "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+      "raw": {
+        "pfe": 1304.6078878429987,
+        "mediana": 2377.3935036527682,
+        "percentil": 0.01903960571638663
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
