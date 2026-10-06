@@ -87,3 +87,44 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Comparar con la curva de crecimiento para la edad gestacional
+
+
+### 2
+
+Entre los percentiles 10 y 90: adecuado para la edad gestacional
+
+| Detalles del resultado | |
+| --- | --- |
+| Peso mediano para 34s 0d (Hadlock 1991) | 2377 g |
+| Percentil estimado | 18 |
+
+
+### 3
+
+Entre los percentiles 10 y 90: adecuado para la edad gestacional
+
+| Detalles del resultado | |
+| --- | --- |
+| Peso mediano para 40s 0d (Hadlock 1991) | 3619 g |
+| Percentil estimado | 56 |
+
+
+### 4
+
+Por debajo del percentil 10: pequeño para la edad gestacional
+
+| Detalles del resultado | |
+| --- | --- |
+| Peso mediano para 34s 0d (Hadlock 1991) | 2377 g |
+| Percentil estimado | < 1 |
+
+Por debajo del percentil 3: por consenso de Delphi, es restricción del crecimiento fetal incluso sin Doppler alterado.
+

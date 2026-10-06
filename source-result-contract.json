@@ -1,0 +1,282 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "peso-fetal-estimado-hadlock",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "67e978f8ab3e59980781493e405d3894b1c19fe1",
+    "oldEngineSha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+    "currentEngineSha256": "1226377312dd21c9a50e0db0f727809540984306cbfb715bdcf0481230556b64"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+      "input": {
+        "cc": 30,
+        "ca": 30,
+        "cf": 6
+      },
+      "publicOutput": {
+        "id": "peso-fetal-estimado-hadlock",
+        "main": [
+          "2.100",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 2099.9067037624263
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pfe": 2099.9
+        },
+        "tol": 1,
+        "level": "info"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2.100",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "level": "info",
+        "verdict": "Compare com a curva de crescimento para a idade gestacional",
+        "rows": [],
+        "raw": {
+          "pfe": 2099.9067037624263
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+      "input": {
+        "cc": 30,
+        "ca": 30,
+        "cf": 6,
+        "ig_sem": 34,
+        "ig_dias": 0
+      },
+      "publicOutput": {
+        "id": "peso-fetal-estimado-hadlock",
+        "main": [
+          "2.100",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 2099.9067037624263,
+          "mediana": 2377.3935036527682,
+          "percentil": 17.903557550519476
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "mediana": 2377.4,
+          "percentil": 17.9
+        },
+        "tol": 1,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2.100",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "level": "low",
+        "verdict": "Entre os percentis 10 e 90: adequado para a idade gestacional",
+        "rows": [
+          [
+            "Peso mediano para 34s 0d (Hadlock 1991)",
+            "2.377 g"
+          ],
+          [
+            "Percentil estimado",
+            "18"
+          ]
+        ],
+        "raw": {
+          "pfe": 2099.9067037624263,
+          "mediana": 2377.3935036527682,
+          "percentil": 17.903557550519476
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+      "input": {
+        "cc": 34,
+        "ca": 36,
+        "cf": 7.4,
+        "ig_sem": 40,
+        "ig_dias": 0
+      },
+      "publicOutput": {
+        "id": "peso-fetal-estimado-hadlock",
+        "main": [
+          "3.693",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 3692.6317540570685,
+          "mediana": 3619.1700117160603,
+          "percentil": 56.3491095168013
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pfe": 3692.6,
+          "mediana": 3619.2,
+          "percentil": 56.3
+        },
+        "tol": 1,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3.693",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "level": "low",
+        "verdict": "Entre os percentis 10 e 90: adequado para a idade gestacional",
+        "rows": [
+          [
+            "Peso mediano para 40s 0d (Hadlock 1991)",
+            "3.619 g"
+          ],
+          [
+            "Percentil estimado",
+            "56"
+          ]
+        ],
+        "raw": {
+          "pfe": 3692.6317540570685,
+          "mediana": 3619.1700117160603,
+          "percentil": 56.3491095168013
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+      "input": {
+        "cc": 28,
+        "ca": 24,
+        "cf": 5.5,
+        "ig_sem": 34,
+        "ig_dias": 0
+      },
+      "publicOutput": {
+        "id": "peso-fetal-estimado-hadlock",
+        "main": [
+          "1.305",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "raw": {
+          "pfe": 1304.6078878429987,
+          "mediana": 2377.3935036527682,
+          "percentil": 0.01903960571638663
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pfe": 1304.6
+        },
+        "tol": 1,
+        "level": "mid",
+        "verdict": "percentil 10"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1.305",
+          "g"
+        ],
+        "label": "Peso fetal estimado (Hadlock 1985: CC, CA e CF)",
+        "level": "mid",
+        "verdict": "Abaixo do percentil 10: pequeno para a idade gestacional",
+        "rows": [
+          [
+            "Peso mediano para 34s 0d (Hadlock 1991)",
+            "2.377 g"
+          ],
+          [
+            "Percentil estimado",
+            "&lt; 1"
+          ]
+        ],
+        "raw": {
+          "pfe": 1304.6078878429987,
+          "mediana": 2377.3935036527682,
+          "percentil": 0.01903960571638663
+        },
+        "note": "Abaixo do percentil 3: pelo consenso de Delphi, é restrição de crescimento fetal mesmo sem Doppler alterado."
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}

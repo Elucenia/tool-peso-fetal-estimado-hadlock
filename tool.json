@@ -290,7 +290,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Hadlock 1985 HC/AC/FL variante 3 medidas; curva Hadlock 1991 lognormalmediana, DP 12,7% aproximaçãolocal",
-    "implementationVersion": "peso-fetal-estimado-hadlock@native-2026-10-03+db0279cca49e",
+    "implementationVersion": "peso-fetal-estimado-hadlock@native-2026-10-05+1226377312dd",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3881966/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -546,7 +546,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+      "implementationHash": "1226377312dd21c9a50e0db0f727809540984306cbfb715bdcf0481230556b64",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "peso-fetal-estimado-hadlock@native-2026-10-03+db0279cca49e",
+          "previousImplementationHash": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17",
+          "implementationHash": "1226377312dd21c9a50e0db0f727809540984306cbfb715bdcf0481230556b64",
+          "scientificBodySha256": "2a85b9160abccbf7382e42f4ecc8d5f6073d9cb14b87a4604b418314f63840f7",
+          "metadataContractHash": "63b9863d123592f487aa70dc355abf357d02228591bebc5e05d0fef5df7674da",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A referência Hadlock 1985 avaliou modelos de peso fetal em 109 fetos, usando dimensões de cabeça, abdome e fêmur. Peso estimado não é uma medida direta e tem erro de predição; o 1DP de 7,5% relatado nesse estudo não deve ser confundido com parâmetros da curva de crescimento de 1991. Percentis e aproximações locais dependem de uma fonte/variante adicional, ainda não conferida integralmente nessa leitura.",
     "sourceLimitEvidence": {
@@ -565,20 +593,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/peso-fetal-estimado-hadlock/calculator.js",
-    "bytes": 5966,
-    "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+    "bytes": 6171,
+    "sha256": "1226377312dd21c9a50e0db0f727809540984306cbfb715bdcf0481230556b64"
   },
-  "sourceToolSha256": "de59bd6ab47c0386512769ea2f0ff2cf25d97ea5aa0e39b389f5dc34dc577342",
+  "sourceToolSha256": "1806d95a64f0eb4e899eaa6079c79aa57412ad010ca28301ae877e7fed89a9fd",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "c674620d4ed140aa466e94c509ed9315cf7f0b39429a1bf7bccc4334c9f0b247",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "c674620d4ed140aa466e94c509ed9315cf7f0b39429a1bf7bccc4334c9f0b247",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

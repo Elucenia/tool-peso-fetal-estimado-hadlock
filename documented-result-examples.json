@@ -1,0 +1,1637 @@
+{
+  "id": "peso-fetal-estimado-hadlock",
+  "implementationVersion": "peso-fetal-estimado-hadlock@native-2026-10-05+1226377312dd",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Compare com a curva de crescimento para a idade gestacional",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano para 34s 0d (Hadlock 1991)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2.377 g",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentil estimado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "18",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Entre os percentis 10 e 90: adequado para a idade gestacional",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano para 40s 0d (Hadlock 1991)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3.619 g",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentil estimado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "56",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Entre os percentis 10 e 90: adequado para a idade gestacional",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano para 34s 0d (Hadlock 1991)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2.377 g",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentil estimado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Abaixo do percentil 10: pequeno para a idade gestacional",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Abaixo do percentil 3: pelo consenso de Delphi, é restrição de crescimento fetal mesmo sem Doppler alterado.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Compare with the growth curve for gestational age",
+            "locale": "en",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Median weight for 34w 0d (Hadlock 1991)",
+                "locale": "en",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "en",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Estimated percentile",
+                "locale": "en",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "18",
+                "locale": "en",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Between the 10th and 90th percentiles: appropriate for gestational age",
+            "locale": "en",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Median weight for 40w 0d (Hadlock 1991)",
+                "locale": "en",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "3619 g",
+                "locale": "en",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Estimated percentile",
+                "locale": "en",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "56",
+                "locale": "en",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Between the 10th and 90th percentiles: appropriate for gestational age",
+            "locale": "en",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Median weight for 34w 0d (Hadlock 1991)",
+                "locale": "en",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "en",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Estimated percentile",
+                "locale": "en",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "en",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Below the 10th percentile: small for gestational age",
+            "locale": "en",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "Below the 3rd percentile: by Delphi consensus, this is fetal growth restriction even without abnormal Doppler.",
+            "locale": "en",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Comparar con la curva de crecimiento para la edad gestacional",
+            "locale": "es",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano para 34s 0d (Hadlock 1991)",
+                "locale": "es",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "es",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentil estimado",
+                "locale": "es",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "18",
+                "locale": "es",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Entre los percentiles 10 y 90: adecuado para la edad gestacional",
+            "locale": "es",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano para 40s 0d (Hadlock 1991)",
+                "locale": "es",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "3619 g",
+                "locale": "es",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentil estimado",
+                "locale": "es",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "56",
+                "locale": "es",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Entre los percentiles 10 y 90: adecuado para la edad gestacional",
+            "locale": "es",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano para 34s 0d (Hadlock 1991)",
+                "locale": "es",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "es",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentil estimado",
+                "locale": "es",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "es",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Por debajo del percentil 10: pequeño para la edad gestacional",
+            "locale": "es",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "Por debajo del percentil 3: por consenso de Delphi, es restricción del crecimiento fetal incluso sin Doppler alterado.",
+            "locale": "es",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Comparer à la courbe de croissance pour l’âge gestationnel",
+            "locale": "fr",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Poids médian pour 34 s 0 j (Hadlock 1991)",
+                "locale": "fr",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "fr",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentile estimé",
+                "locale": "fr",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "18",
+                "locale": "fr",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Entre les percentiles 10 et 90 : adapté à l’âge gestationnel",
+            "locale": "fr",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Poids médian pour 40 s 0 j (Hadlock 1991)",
+                "locale": "fr",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "3619 g",
+                "locale": "fr",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentile estimé",
+                "locale": "fr",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "56",
+                "locale": "fr",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Entre les percentiles 10 et 90 : adapté à l’âge gestationnel",
+            "locale": "fr",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Poids médian pour 34 s 0 j (Hadlock 1991)",
+                "locale": "fr",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "fr",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentile estimé",
+                "locale": "fr",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "fr",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "En dessous du 10e percentile : petit pour l’âge gestationnel",
+            "locale": "fr",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "En dessous du 3e percentile : selon le consensus Delphi, il s’agit d’un retard de croissance fœtale même sans Doppler anormal.",
+            "locale": "fr",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mit der Wachstumskurve für das Gestationsalter vergleichen",
+            "locale": "de",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Medianes Gewicht für 34 SSW 0 T (Hadlock 1991)",
+                "locale": "de",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "de",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Geschätztes Perzentil",
+                "locale": "de",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "18",
+                "locale": "de",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Zwischen dem 10. und 90. Perzentil: angemessen für das Gestationsalter",
+            "locale": "de",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Medianes Gewicht für 40 SSW 0 T (Hadlock 1991)",
+                "locale": "de",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "3619 g",
+                "locale": "de",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Geschätztes Perzentil",
+                "locale": "de",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "56",
+                "locale": "de",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Zwischen dem 10. und 90. Perzentil: angemessen für das Gestationsalter",
+            "locale": "de",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Medianes Gewicht für 34 SSW 0 T (Hadlock 1991)",
+                "locale": "de",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "de",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Geschätztes Perzentil",
+                "locale": "de",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "de",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Unterhalb des 10. Perzentils: klein für das Gestationsalter",
+            "locale": "de",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "Unterhalb des 3. Perzentils: nach Delphi-Konsens ist dies eine fetale Wachstumsrestriktion, auch ohne auffälligen Doppler.",
+            "locale": "de",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Confrontare con la curva di crescita per l’età gestazionale",
+            "locale": "it",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano per 34 sett. 0 gg (Hadlock 1991)",
+                "locale": "it",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "it",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentile stimato",
+                "locale": "it",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "18",
+                "locale": "it",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Tra il 10° e il 90° percentile: adeguato per l’età gestazionale",
+            "locale": "it",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano per 40 sett. 0 gg (Hadlock 1991)",
+                "locale": "it",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "3619 g",
+                "locale": "it",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentile stimato",
+                "locale": "it",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "56",
+                "locale": "it",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Tra il 10° e il 90° percentile: adeguato per l’età gestazionale",
+            "locale": "it",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso mediano per 34 sett. 0 gg (Hadlock 1991)",
+                "locale": "it",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "it",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Percentile stimato",
+                "locale": "it",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "it",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sotto il 10° percentile: piccolo per l’età gestazionale",
+            "locale": "it",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "Sotto il 3° percentile: secondo il consenso Delphi, si tratta di restrizione della crescita fetale anche senza Doppler alterato.",
+            "locale": "it",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "قارنه بمنحنى النمو لعمر الحمل",
+            "locale": "ar",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الوزن الوسيط عند ٣٤ أسبوعًا و٠ يومًا (Hadlock 1991)",
+                "locale": "ar",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "٢٣٧٧ غ",
+                "locale": "ar",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المئين المقدّر",
+                "locale": "ar",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "١٨",
+                "locale": "ar",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "بين المئينين 10 و90: مناسب لعمر الحمل",
+            "locale": "ar",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الوزن الوسيط عند ٤٠ أسبوعًا و٠ يومًا (Hadlock 1991)",
+                "locale": "ar",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "٣٦١٩ غ",
+                "locale": "ar",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المئين المقدّر",
+                "locale": "ar",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "٥٦",
+                "locale": "ar",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "بين المئينين 10 و90: مناسب لعمر الحمل",
+            "locale": "ar",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الوزن الوسيط عند ٣٤ أسبوعًا و٠ يومًا (Hadlock 1991)",
+                "locale": "ar",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "٢٣٧٧ غ",
+                "locale": "ar",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المئين المقدّر",
+                "locale": "ar",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< ١",
+                "locale": "ar",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "أقل من المئين 10: صغير بالنسبة لعمر الحمل",
+            "locale": "ar",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "أقل من المئين 3: وفقًا لتوافق دلفي، يُعد هذا تقييدًا لنمو الجنين حتى دون وجود دوبلر غير طبيعي.",
+            "locale": "ar",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "与胎龄生长曲线比较",
+            "locale": "zh",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "34周0天的中位体重（Hadlock 1991）",
+                "locale": "zh",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "zh",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "估计百分位数",
+                "locale": "zh",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "18",
+                "locale": "zh",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "介于第 10 和第 90 百分位之间：适合胎龄",
+            "locale": "zh",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "40周0天的中位体重（Hadlock 1991）",
+                "locale": "zh",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "3619 g",
+                "locale": "zh",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "估计百分位数",
+                "locale": "zh",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "56",
+                "locale": "zh",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "介于第 10 和第 90 百分位之间：适合胎龄",
+            "locale": "zh",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "34周0天的中位体重（Hadlock 1991）",
+                "locale": "zh",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "zh",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "估计百分位数",
+                "locale": "zh",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "zh",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低于第 10 百分位：胎龄小",
+            "locale": "zh",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "低于第 3 百分位：根据 Delphi 共识，即使多普勒未异常，也属于胎儿生长受限。",
+            "locale": "zh",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "在胎齢の成長曲線と比較する",
+            "locale": "ja",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "34週 0日での中央値体重（Hadlock 1991）",
+                "locale": "ja",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "ja",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "推定パーセンタイル",
+                "locale": "ja",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "18",
+                "locale": "ja",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "第 10 ～ 90 パーセンタイル：在胎齢相当",
+            "locale": "ja",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "40週 0日での中央値体重（Hadlock 1991）",
+                "locale": "ja",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "3619 g",
+                "locale": "ja",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "推定パーセンタイル",
+                "locale": "ja",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "56",
+                "locale": "ja",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "第 10 ～ 90 パーセンタイル：在胎齢相当",
+            "locale": "ja",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "34週 0日での中央値体重（Hadlock 1991）",
+                "locale": "ja",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "ja",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "推定パーセンタイル",
+                "locale": "ja",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "ja",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "第 10 パーセンタイル未満：胎齢不当軽量",
+            "locale": "ja",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "第 3 パーセンタイル未満：Delphi 合意では、ドプラー異常がなくても胎児発育不全である。",
+            "locale": "ja",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "CC 30, CA 30, CF 6 cm: log = 3,3222 → 2.100 g",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गर्भकालीन आयु के लिए वृद्धि वक्र से तुलना करें",
+            "locale": "hi",
+            "template": "documented-authored-f78edebf8d1a1a1da6c9"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mesmo feto com 34s 0d: mediana 2.377 g, z = −0,92, percentil 18 (adequado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "34 सप्ताह 0 दिन के लिए माध्यिका वजन (Hadlock 1991)",
+                "locale": "hi",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "hi",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अनुमानित पर्सेंटाइल",
+                "locale": "hi",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "18",
+                "locale": "hi",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  18
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10वें और 90वें पर्सेंटाइल के बीच: गर्भकालीन आयु के लिए उपयुक्त",
+            "locale": "hi",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 34, CA 36, CF 7,4 cm com 40 semanas: 3.693 g, mediana 3.619 g (publicada), percentil 56",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "40 सप्ताह 0 दिन के लिए माध्यिका वजन (Hadlock 1991)",
+                "locale": "hi",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  40,
+                  0
+                ]
+              },
+              "value": {
+                "text": "3619 g",
+                "locale": "hi",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  3619
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अनुमानित पर्सेंटाइल",
+                "locale": "hi",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "56",
+                "locale": "hi",
+                "template": "documented-authored-bfc10c8464317280d5ce",
+                "sourceNumbers": [
+                  56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10वें और 90वें पर्सेंटाइल के बीच: गर्भकालीन आयु के लिए उपयुक्त",
+            "locale": "hi",
+            "template": "documented-authored-05f445e0e53ee22aa62c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "CC 28, CA 24, CF 5,5 cm com 34 semanas: 1.305 g, abaixo do p10 (e do p3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "34 सप्ताह 0 दिन के लिए माध्यिका वजन (Hadlock 1991)",
+                "locale": "hi",
+                "template": "documented-authored-5f0c09c24feb72c3dd7a",
+                "sourceNumbers": [
+                  34,
+                  0
+                ]
+              },
+              "value": {
+                "text": "2377 g",
+                "locale": "hi",
+                "template": "documented-authored-88459c88de8da4eae9bc",
+                "sourceNumbers": [
+                  2377
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अनुमानित पर्सेंटाइल",
+                "locale": "hi",
+                "template": "documented-authored-c8f1a81733edfd1be451"
+              },
+              "value": {
+                "text": "< 1",
+                "locale": "hi",
+                "template": "documented-authored-79b0be4fa196d0ddec62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10वें पर्सेंटाइल से नीचे: गर्भकालीन आयु के लिए छोटा",
+            "locale": "hi",
+            "template": "documented-authored-6ffc0dd97fb070de7336"
+          },
+          "note": {
+            "text": "3वें पर्सेंटाइल से नीचे: Delphi सर्वसम्मति के अनुसार, यह असामान्य डॉप्लर के बिना भी भ्रूण वृद्धि प्रतिबंध है।",
+            "locale": "hi",
+            "template": "documented-authored-fe09f527681a1c84c327"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

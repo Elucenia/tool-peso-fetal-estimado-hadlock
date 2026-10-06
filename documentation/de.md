@@ -87,3 +87,44 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Mit der Wachstumskurve für das Gestationsalter vergleichen
+
+
+### 2
+
+Zwischen dem 10. und 90. Perzentil: angemessen für das Gestationsalter
+
+| Ergebnisdetails | |
+| --- | --- |
+| Medianes Gewicht für 34 SSW 0 T (Hadlock 1991) | 2377 g |
+| Geschätztes Perzentil | 18 |
+
+
+### 3
+
+Zwischen dem 10. und 90. Perzentil: angemessen für das Gestationsalter
+
+| Ergebnisdetails | |
+| --- | --- |
+| Medianes Gewicht für 40 SSW 0 T (Hadlock 1991) | 3619 g |
+| Geschätztes Perzentil | 56 |
+
+
+### 4
+
+Unterhalb des 10. Perzentils: klein für das Gestationsalter
+
+| Ergebnisdetails | |
+| --- | --- |
+| Medianes Gewicht für 34 SSW 0 T (Hadlock 1991) | 2377 g |
+| Geschätztes Perzentil | < 1 |
+
+Unterhalb des 3. Perzentils: nach Delphi-Konsens ist dies eine fetale Wachstumsrestriktion, auch ohne auffälligen Doppler.
+

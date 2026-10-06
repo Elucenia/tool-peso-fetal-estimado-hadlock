@@ -87,3 +87,44 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Confrontare con la curva di crescita per l’età gestazionale
+
+
+### 2
+
+Tra il 10° e il 90° percentile: adeguato per l’età gestazionale
+
+| Dettagli del risultato | |
+| --- | --- |
+| Peso mediano per 34 sett. 0 gg (Hadlock 1991) | 2377 g |
+| Percentile stimato | 18 |
+
+
+### 3
+
+Tra il 10° e il 90° percentile: adeguato per l’età gestazionale
+
+| Dettagli del risultato | |
+| --- | --- |
+| Peso mediano per 40 sett. 0 gg (Hadlock 1991) | 3619 g |
+| Percentile stimato | 56 |
+
+
+### 4
+
+Sotto il 10° percentile: piccolo per l’età gestazionale
+
+| Dettagli del risultato | |
+| --- | --- |
+| Peso mediano per 34 sett. 0 gg (Hadlock 1991) | 2377 g |
+| Percentile stimato | < 1 |
+
+Sotto il 3° percentile: secondo il consenso Delphi, si tratta di restrizione della crescita fetale anche senza Doppler alterato.
+

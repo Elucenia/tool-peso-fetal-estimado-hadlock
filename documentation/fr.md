@@ -87,3 +87,44 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Comparer à la courbe de croissance pour l’âge gestationnel
+
+
+### 2
+
+Entre les percentiles 10 et 90 : adapté à l’âge gestationnel
+
+| Détails du résultat | |
+| --- | --- |
+| Poids médian pour 34 s 0 j (Hadlock 1991) | 2377 g |
+| Percentile estimé | 18 |
+
+
+### 3
+
+Entre les percentiles 10 et 90 : adapté à l’âge gestationnel
+
+| Détails du résultat | |
+| --- | --- |
+| Poids médian pour 40 s 0 j (Hadlock 1991) | 3619 g |
+| Percentile estimé | 56 |
+
+
+### 4
+
+En dessous du 10e percentile : petit pour l’âge gestationnel
+
+| Détails du résultat | |
+| --- | --- |
+| Poids médian pour 34 s 0 j (Hadlock 1991) | 2377 g |
+| Percentile estimé | < 1 |
+
+En dessous du 3e percentile : selon le consensus Delphi, il s’agit d’un retard de croissance fœtale même sans Doppler anormal.
+

@@ -1,6 +1,6 @@
 {
   "id": "peso-fetal-estimado-hadlock",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5966,
-      "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+      "bytes": 6171,
+      "sha256": "1226377312dd21c9a50e0db0f727809540984306cbfb715bdcf0481230556b64"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1119,
-      "sha256": "36e715b99b1ec91e10f008342ee03b7d5193e4ad8ae42c8ca07d73add2487cc1"
+      "bytes": 1388,
+      "sha256": "1773deec87bfc768bc56b8b1af38186ab3fff2d32207645da913c613abbfc29d"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4657,
-      "sha256": "6905e51a48c7082eae8f2b00623f5293bdc20ce7d950e60c8f5beaea3948fb0e"
+      "bytes": 5894,
+      "sha256": "524781db80d5bba2debe9a44faceb151767ae6109d5762304553c8cf51eb8565"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3861,
-      "sha256": "4f2c97c91e0143d891d42c35c84d6b64b859167b6605e12053662ffd0e98fb64"
+      "bytes": 4851,
+      "sha256": "3de724d6f2ee8b8efd6de0fca63adcd2827ff27f4988d87046ad7829315eca2b"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3487,
-      "sha256": "d23e3beb1de071a0919382a7096c75963a92ae23a3f1fa3747c7b2b8fc5a071f"
+      "bytes": 4393,
+      "sha256": "24e480550b200995bd71b070d29f23520ed4719ef539b9655d34bc6fcb5d74ee"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3836,
-      "sha256": "91186fb2401b7f128c795be33f553920f0ffdd1e51364faaaec4f8502b031937"
+      "bytes": 4793,
+      "sha256": "817a58228ef034ebb4924592d6be7798b15705edf6fa21aed7361e63c4d60904"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 4018,
-      "sha256": "3cae350b3709b01b4166759edce8979ab37ccb51f436e30de1d643f031457124"
+      "bytes": 5020,
+      "sha256": "7915850ef7bc59e8457558cbee11c3bfd9708451dbd6e73fcbf0e0816bcabba0"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6261,
-      "sha256": "2fa2b8483cdffef45fd64c20baa118c85c62fe3944b6bed314f18e6574a830b9"
+      "bytes": 8236,
+      "sha256": "93f81bb5e3b813a910c031a5c24e35be716d8109b84eb0762eefbbd25db49325"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3776,
-      "sha256": "67c83daa2b5a2488f89d368a7c94b54bf553257e0b3784f7941ed8059624bc13"
+      "bytes": 4761,
+      "sha256": "6252291cf5dfd5b17353a3680f323750520119fbda77858915a796d5345b369e"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3892,
-      "sha256": "dbebde14d1e872e515c9d0f89150d43468b69b1cb67a368a761d2490885398c8"
+      "bytes": 4848,
+      "sha256": "8fa8c8302fb32ea57723f687580295aa3f470c3f3360c375157d7f3ed866296e"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3613,
-      "sha256": "e341474624d3db20040c705d1af47c59dca98675ed19026fc824599d1f2ffc56"
+      "bytes": 4542,
+      "sha256": "34633c4ca3c3b12e4fa85b1e26499b31b39ac733e7f48fa25620a43ef1a70271"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3115,
-      "sha256": "28a0cadebfd14315d24f6e633fca392554dcc1f7a9c88be0b4ae86aad9117d16"
+      "bytes": 3895,
+      "sha256": "d64e73cd9b0deb3fa6ee1a9c0050cd3ff189338302820a0cd08925e02ae219de"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 53538,
+      "sha256": "54c29c7527c53e48d0f7d401896eb01a05cb9e75a76a1e9a7eb263576c4e577c"
     },
     {
       "path": "engine/tool-code/peso-fetal-estimado-hadlock/calculator.js",
-      "bytes": 5966,
-      "sha256": "db0279cca49e6386a83d482ba572549f7f985d91681fc58ca030668fd9eb3c17"
+      "bytes": 6171,
+      "sha256": "1226377312dd21c9a50e0db0f727809540984306cbfb715bdcf0481230556b64"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2831,
       "sha256": "6cac6b0ac1390733d5db284e9237754092efe598a8b4c5090945947bf32cc20a"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12273,
+      "sha256": "2955f88f53f08ac006842b91b9f022a00bee69bcf20d16c4d45b24800b16d5ba"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 49634,
-      "sha256": "7aed66b61c6aba089a50bb2fa01e978ebe5944bd97778315d973871e58eb0f37"
+      "bytes": 72928,
+      "sha256": "04b1b9b590d219e5427e225bd0e6b39f0b198e92cbd1fd7693860320e0b5e4d6"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 397,
-      "sha256": "2997bdf8120c4550a724dec4f55cb64acca7b340d25125d5e7a208fa062a473c"
+      "bytes": 491,
+      "sha256": "350df70560b0e6142332861963cd8a6f61fe6965d57994117a609c5b0a52366d"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12273,
-      "sha256": "2955f88f53f08ac006842b91b9f022a00bee69bcf20d16c4d45b24800b16d5ba"
+      "bytes": 6430,
+      "sha256": "525f59f074a28ba3e9812beb152a7832c5ba8e5c6873f57b1c1858156353fd08"
     },
     {
       "path": "README.md",
-      "bytes": 3247,
-      "sha256": "a87cfb8f2ecadf58d9df2bc6153389b2346b79768704b0ea6f344e6bf543e123"
+      "bytes": 3840,
+      "sha256": "47fa021fad46e79e9c0185b641ca0681a84b9f438e290c41cd7a6bd810d5da72"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 7880,
+      "sha256": "d8103fa73e32fc6372629d14a7bf1713f2a553581f75da506c8644fadae20374"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1913,
       "sha256": "283206eb5c2a22fc591f859afaaec16272ea40c53329ce8ad1884adc537f3e28"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 26738,
-      "sha256": "aeb29d740111f7cde9798c715d48a98a3a4287069123aba23e8d4bf0c8c791f9"
+      "bytes": 28246,
+      "sha256": "2c4976cd8aac3127f333828c243dd1729a7e82f1d8052cf7c31db3289e5e687a"
     }
   ]
 }

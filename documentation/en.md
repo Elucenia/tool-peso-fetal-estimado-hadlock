@@ -87,3 +87,44 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Compare with the growth curve for gestational age
+
+
+### 2
+
+Between the 10th and 90th percentiles: appropriate for gestational age
+
+| Result details | |
+| --- | --- |
+| Median weight for 34w 0d (Hadlock 1991) | 2377 g |
+| Estimated percentile | 18 |
+
+
+### 3
+
+Between the 10th and 90th percentiles: appropriate for gestational age
+
+| Result details | |
+| --- | --- |
+| Median weight for 40w 0d (Hadlock 1991) | 3619 g |
+| Estimated percentile | 56 |
+
+
+### 4
+
+Below the 10th percentile: small for gestational age
+
+| Result details | |
+| --- | --- |
+| Median weight for 34w 0d (Hadlock 1991) | 2377 g |
+| Estimated percentile | < 1 |
+
+Below the 3rd percentile: by Delphi consensus, this is fetal growth restriction even without abnormal Doppler.
+
